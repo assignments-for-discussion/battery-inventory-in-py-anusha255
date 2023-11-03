@@ -1,5 +1,6 @@
 
 def count_batteries_by_health(present_capacities):
+  SoH% = 100 * present_capacity / rated_capacity
   return {
     "healthy": 0,
     "exchange": 0,
