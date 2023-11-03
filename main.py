@@ -5,13 +5,13 @@ def count_batteries_by_health(present_capacities):
     "exchange": 0,
     "failed": 0
   }
-  for present_capacity in present_capacities:
+for present_capacity in present_capacities:
       SoH% = 100 * present_capacity / rated_capacity
-  if SOH%>=80:
+if SOH%>=80:
     counts["healthy"]+=1
-  else if SOH>=60:
+elif SOH>=60:
     counts["exchange"]+=1
-  else:
+else:
     counts["failed"]+=1
 return counts 
 
